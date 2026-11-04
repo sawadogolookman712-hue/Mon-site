@@ -1,0 +1,23 @@
+STREAMPLAYER - Projet Android (Kotlin + Jetpack Compose + Media3)
+
+COMPILER L'APK
+1. Installer Android Studio (version Koala ou plus récente) : https://developer.android.com/studio
+2. Décompresser ce dossier, puis File > Open > choisir le dossier StreamPlayer
+3. Attendre la fin de "Gradle Sync" (internet requis, 5 à 10 min la première fois)
+4. Menu Build > Build Bundle(s) / APK(s) > Build APK(s)
+5. APK : app/build/outputs/apk/debug/app-debug.apk
+   (Pour la version release : Build Variants > release ; l'APK est signé avec la clé de debug)
+6. Copier l'APK sur le téléphone et l'installer (autoriser les sources inconnues).
+
+UTILISATION
+- Au premier lancement, saisir l'adresse de votre playlist M3U (bouton "Playlist").
+- Onglets : Chaînes / Films / Séries. Recherche en haut.
+- N'utiliser que des playlists dont vous détenez les droits de diffusion.
+
+COMPILER EN LIGNE SANS ORDINATEUR (GitHub Actions)
+1. Créer un compte gratuit sur github.com et un nouveau dépôt (repository).
+2. Y envoyer tout le contenu du dossier StreamPlayer, y compris le dossier caché .github
+   (sur l'ordinateur ou depuis le navigateur du téléphone en mode "ordinateur").
+3. Onglet Actions > "Build APK" > Run workflow (ou attendre le lancement automatique).
+4. Après 5 à 10 minutes, ouvrir l'exécution terminée > section Artifacts > télécharger StreamPlayer-apk.
+5. Décompresser, puis installer app-debug.apk sur le téléphone.
